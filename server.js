@@ -13,7 +13,7 @@ app.use('/user', require('./routes/user'))
 app.use('/passwords', require('./routes/passwords'))
 
 
-mongoose.connect('mongodb+srv://mshynltf:mshynltf@cluster0.xixtolj.mongodb.net/?retryWrites=true&w=majority', ()=>{ console.log('db connected')});
+mongoose.connect(process.env.mongodbURL, ()=>{ console.log('db connected')});
 
 const PORT = process.env.port || 3003
 
