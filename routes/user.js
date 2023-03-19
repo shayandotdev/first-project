@@ -27,19 +27,19 @@ router.post('/register', [
 
             if (oldData) {
                 return res.status(403).json({
-                    message: "email already exists!",
+                    message: "email already exists!"
                 })
             };
 
             if (phoneData) {
                 return res.status(403).json({
-                    message: "phone already exists!",
+                    message: "phone already exists!"
                 })
             };
 
             if (usernameData) {
                 return res.status(403).json({
-                    message: " already exists!",
+                    message: " already exists!"
                 })
             };
 
